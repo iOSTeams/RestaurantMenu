@@ -52,35 +52,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTd-nj-ZIH">
-                                <rect key="frame" x="302" y="158" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTd-nj-ZIH">
+                                <rect key="frame" x="282" y="205" width="35" height="30"/>
+                                <state key="normal" title="Food"/>
                                 <connections>
                                     <segue destination="csY-d4-4mq" kind="show" id="WEi-PN-cyo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o83-nb-39J">
-                                <rect key="frame" x="302" y="459" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o83-nb-39J">
+                                <rect key="frame" x="276.5" y="150" width="47" height="30"/>
+                                <state key="normal" title="Desert"/>
                                 <connections>
                                     <segue destination="z62-UW-5A7" kind="show" id="5tO-zi-c5f"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnE-q9-iPX">
-                                <rect key="frame" x="302" y="319" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnE-q9-iPX">
+                                <rect key="frame" x="282" y="285" width="36" height="30"/>
+                                <state key="normal" title="Boba"/>
                                 <connections>
                                     <segue destination="Sqt-IH-9rn" kind="show" id="2nA-sj-TbE"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bTd-nj-ZIH" firstAttribute="centerX" secondItem="Fxf-TS-04C" secondAttribute="centerX" id="Obv-qa-wbM"/>
+                            <constraint firstItem="lnE-q9-iPX" firstAttribute="top" secondItem="bTd-nj-ZIH" secondAttribute="bottom" constant="50" id="S21-Wc-NHQ"/>
+                            <constraint firstItem="lnE-q9-iPX" firstAttribute="centerY" secondItem="Fxf-TS-04C" secondAttribute="centerY" id="gSe-h4-HUS"/>
+                            <constraint firstItem="o83-nb-39J" firstAttribute="centerX" secondItem="Fxf-TS-04C" secondAttribute="centerX" id="ow5-qr-Rvp"/>
+                            <constraint firstItem="o83-nb-39J" firstAttribute="top" secondItem="Fxf-TS-04C" secondAttribute="top" constant="150" id="pwk-5T-9ea"/>
+                            <constraint firstItem="lnE-q9-iPX" firstAttribute="centerX" secondItem="Fxf-TS-04C" secondAttribute="centerX" id="vvs-tq-GXL"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QMo-T2-bd9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Roz-wm-aX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1543" y="-468"/>
+            <point key="canvasLocation" x="1576" y="-470"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5Xk-LT-4cr">
