@@ -14,9 +14,12 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var taxSlider: UISlider!
     @IBOutlet weak var enterButton: UIButton!
     @IBOutlet weak var amountTextField: UITextField!
+    @IBOutlet weak var resultTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //self.amountTextField = self;
 
     }
 
@@ -27,9 +30,22 @@ class SecondViewController: UIViewController {
     
     @IBAction func buttonPressed(sender: AnyObject) {
         
-        var userInput = amountTextField.text
+        //convert user input's String to float
+        let input = amountTextField.text
+        let userInput = (input! as NSString).floatValue
         
-        print (userInput!)
+        
+        
+        let tipAmount =  taxSlider.value
+        
+        let result =  "" + String(tipAmount * userInput + userInput)
+        
+        
+        //output
+        print ( result)
+        resultTextField.text = result
+        
+        //formatter %f
 
         
     }
@@ -39,9 +55,10 @@ class SecondViewController: UIViewController {
 
     @IBAction func rateChangeSlider(sender: AnyObject) {
         
-//        // Set the label text to the value of the slider as it changes
-//        self.label.text = [NSString stringWithFormat:@"%f", self.slider.value];
-        self.sliderPercentage.text = self.sliderPercentage.valueForKey
+        var percent = NSString(format: "%.2f", taxSlider.value * 100)
+
+
+        sliderPercentage.text = "" + (percent as String) + "%"
     }
 
 }
